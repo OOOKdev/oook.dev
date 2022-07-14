@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Hello, world!</title>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width,initial-scale=1" />
+	<meta name="description" content="" />
+
+	<link rel="stylesheet" type="text/css" href="/main.css" />
+
+	<link rel="icon" href="img/favicon.png">
+
+	<meta name="theme-color" content="">
+
+	<meta property="og:title" content="" />
+	<meta property="og:description" content="" />
+	<meta property="og:image" content="" />
+
+	<meta name="twitter:card" content="">
+	<meta name="twitter:site" content="">
+	<meta name="twitter:title" content="">
+	<meta name="twitter:description" content="">
+	<meta name="twitter:image" content="">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+    body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Inter', sans-serif;
+}
+
+nav {
+	width: 100%;
+	position: fixed;
+	top: 0;
+	z-index: 100;
+	margin-top:20px
+}
+
+.flex { display: flex; }
+.flex > * { flex: 1; }
+
+.nav-text {
+	text-align: center;
+	padding-top: 5px;
+	font-weight: 600;
+	padding: 20px;
+}
+
+.link {
+	text-decoration: none;
+	color: blue
+}
+
+nav a {
+	text-decoration: none;
+	color: black
+}
+
+nav a:hover, .link:hover {
+	border-bottom: 3px solid blue;
+	cursor: pointer
+}
+
+.nav-title {
+	text-align: center;
+	color: red;
+	font-size: 20px;
+	padding-top: 20px;
+	font-weight: 900;
+}
+
+.section {
+	text-align: center
+}
+
+.header {
+	font-size: 30px;
+	font-weight: 900;
+}
+
+.red {
+	color: red
+}
+
+.red-outline {
+	border: 3px solid red;
+	padding: 50px 50px;
+	border-radius: 15px
+}
+
+.content {
+	max-width: 60%;
+	margin: auto;
+	text-align: left
+}
+
+.center {
+	width: 100%;
+	text-align: center
+}
+
+.cta-button {
+	background: red;
+	color: white;
+	font-weight: 800;
+	padding: 13px 38px;
+	margin: 0 15px;
+	border-radius: 15px;
+	border: 2px solid red;
+	cursor: pointer;
+	text-decoration: none;
+    margin-top: 25px;
+}
+
+.cta-button-wishes {
+	background: red;
+	color: white;
+	font-weight: 800;
+	padding: 13px 38px;
+	margin: 0 15px;
+	border-radius: 15px;
+	cursor: pointer;
+	text-decoration: none;
+    margin-top: 25px;
+}
+
+.cta-button-2 {
+	background: black;
+	color: white;
+	font-weight: 800;
+	padding: 13px 38px;
+	margin: 0 15px;
+	border-radius: 15px;
+	border: 2px solid black;
+	cursor: pointer;
+	text-decoration: none;
+    margin-top: 25px;
+}
+
+.cta-button:hover {
+	background: white;
+	color: red;
+}
+
+.cta-button-2:hover {
+	background: white;
+	color: black;
+}
+
+.center-vert {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   position: relative;
+   width: 100%;
+   height: 100vh;
+}
+
+.center-vert * {
+   position: relative;
+}
+
+ul, li {
+	list-style-type: none;
+}
+
+li:before {
+	content: '\2013';
+	position: absolute;
+	margin-left: -20px;
+}
+
+li {
+	margin-left: 40px;
+	margin-top: 5px
+}
+
+.divider {
+	margin: 0 30px;
+	border-right: 2px solid black;
+	max-width: 0px !important;
+}
+
+.black {
+	color: black
+}
+
+.particle {
+	--x: 0;
+	--y: 0;
+	background-color: rebeccapurple;
+	border-radius: 50%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	height: 5px;
+	width: 5px;
+	z-index: -1;
+}
+
+.particle.move {
+	animation: move 1000ms linear forwards;
+}
+
+@keyframes move {
+	to {
+		transform: translate(var(--x), var(--y));
+	}
+	
+	95% {
+		opacity: 1;
+	}
+	
+	100% {
+		opacity: 0;
+	}
+}
+    </style>
+</head>
+
+<body>
+
+	<nav class="flex">
+		<div class="nav-title"><a class="red">oook<span class="black">!</span></a></div>
+		<div class="nav-text"><a href="#stuff">the stuff</a></div>
+		<div class="nav-text"><a href="#history">our history</a></div>
+		<div class="nav-text"><a href="#reach">reach out</a></div>
+	</nav>
+
+	<main>
+
+		<section class="section center-vert">
+			<br><br>
+			<div class="content red-outline">
+				<h1 class="header"><span class="red">oook</span>! development</h1>
+				<span class="red"><b>oook</b></span>! is a development studio, we are featured in real estate and business oriented software.<br><br>You can check out our works below. If it looks interesting for your company, please feel free to reach out.<br><br>If you'd like to shoot us an idea (we love doing fun projects too!) then definitely reach out as well.
+				<br><br><br><br>
+				<div class="center">
+					<a class="cta-button" href="#stuff">the stuff</a>
+					<a class="cta-button-2" href="#reach">reach out</a>
+				</div>
+				<br><br>
+			</div>
+		</section>
+
+		<section class="section center-vert" id="stuff">
+			<br><br>
+			<div class="content red-outline">
+				<h1 class="header"><span>The "stuff"</span></h1>
+				Haha! Now we get to talk about our products and try and sell them to you!
+				<br><br><b><a href="https://realting.com" target="_blank" class="link">Realting</a></b><br>
+				<span>Super cool accounting and marketing automations fotware for realtors!</span>
+                
+				<br><br><b><a href="https://rentian.com" target="_blank" class="link">Rentian</a></b><br>
+				<span>Own one rental as side income? Manage 200 rentals for an investment firm? Rentian will help you manage all of it!</span>
+                
+				<br><br>
+			</div>
+		</section>
+
+
+
+		<section class="section center-vert" id="history">
+			<br><br>
+			<div class="content red-outline">
+				<h1 class="header"><span>Our history</span></h1>
+				We are a young company! Wish us the best!
+				<br>
+                        <div class="pyro">
+    <div class="before"></div>
+    <div class="after"></div>
+</div>
+				<br><b>2022</b>
+				<li>Founded as Rentian</li>
+				<li>Launched Realting real estate software</li>
+				<li>Launched Rentian rental software</li>
+                
+				<li>Rebranded development company to Oook!</li>
+				<br><b>The future</b>
+				<li>Hopefully a lot to come!</li>
+                <br><br>
+					<a class="cta-button-wishes" id="btn">best wishes (FIREWORKS!)</a>
+				<br><br><br>
+			</div>
+		</section>
+
+
+		<section class="section center-vert" id="reach">
+			<br><br>
+			<div class="content red-outline">
+				<h1 class="header"><span>Reach out</span></h1>
+				Reach out for questions, demos, job oppurtunites, and to shoot us ideas!<br><br>Instagram DMs are best but snail mail (better send us something cool) and email work too.
+				<br><br><br><br>
+				<div class="center">
+					<a class="cta-button">instagram</a>
+					<a class="cta-button-2">email (ew)</a><br><br><br>
+					<a class="cta-button-2">snail mail (kinda cool actually)</a>
+				</div>
+				<br><br>
+			</div>
+		</section>
+
+	</main>
+
+</body>
+
+<script>
+const btn = document.getElementById('btn');
+
+btn.addEventListener('click', () => {
+	const particles = [];
+	const color = randomColor();
+	
+	const particle = document.createElement('span');
+	particle.classList.add('particle', 'move');
+	
+	const { x, y } = randomLocation();
+	particle.style.setProperty('--x', x);
+	particle.style.setProperty('--y', y);
+	particle.style.background = color;
+	btn.style.background = color;
+	
+	btn.appendChild(particle);
+	
+	particles.push(particle);
+	
+	setTimeout(() => {
+	
+		for(let i=0; i<100; i++) {
+			const innerP = document.createElement('span');
+			innerP.classList.add('particle', 'move');
+			innerP.style.transform = `translate(${x}, ${y})`;
+
+			const xs = Math.random() * 200 - 100 + 'px';
+			const ys = Math.random() * 200 - 100 + 'px';
+			innerP.style.setProperty('--x', `calc(${x} + ${xs})`);
+			innerP.style.setProperty('--y', `calc(${y} + ${ys})`);
+			innerP.style.animationDuration = Math.random() * 300 + 200 + 'ms';
+			
+			btn.appendChild(innerP);
+			particles.push(innerP)
+		}
+		
+		setTimeout(() => {
+			particles.forEach(particle => {
+				particle.remove();
+			})
+		}, 1000)
+	}, 1000);
+});
+
+function randomLocation() {
+	return {
+		x: Math.random() * window.innerWidth - window.innerWidth / 2 + 'px',
+		y: Math.random() * window.innerHeight - window.innerHeight / 2 + 'px',
+	}
+}
+
+function randomColor() {
+	return `hsl(${Math.floor(Math.random() * 361)}, 100%, 50%)`;
+}
+</script>
+
+</html>
+
+
